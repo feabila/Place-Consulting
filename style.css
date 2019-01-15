@@ -1,0 +1,100 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    
+    font-family: Lato, "sans-serif";
+    font-weight: 400;
+}
+p {font-size: 1em;}
+
+/*TRIGGERS*/
+.clear {clear: both;}
+.underline{text-decoration: underline;}
+/*BODY*/
+body {
+    background-color: #dddddd;
+}
+
+/*HEADER*/
+header {
+    width: auto; 
+    height: 15%;
+    /*margin-bottom: 20px;*/
+    color: #fff;
+    text-align: center;
+    background-color: rgb(115, 115, 116);
+}
+header p#title{
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px 0 10px;
+}
+header p#subtitle {
+    font-size: 0.9em;s
+}
+form#formCode {
+    width: 80%;
+    height: 10%;
+    line-height: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 515px){
+    form#formCode input#inputCode {
+        margin-left: 6%;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 515px){
+    form#formCode input#inputCode {
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 700px){
+    form#formCode input#inputCode {
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 1250px) and (min-width: 1000px){
+    form#formCode input#inputCode {
+        margin-left: 38%;
+    }
+}
+@media screen and (max-width: 1366px) and (min-width: 1250px){
+    form#formCode input#inputCode {
+        margin-left: 40%;
+    }
+}
+form#formCode input#inputCode {
+    width: 200px;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #eee;
+    border-bottom: 1px solid gray;
+}
+form#formCode input#inputCode:focus {
+    border-bottom: 2px solid gray;
+}
+form#formCode button#buttonCode{
+    width: 80px;
+    height: 35px;
+    line-height: 30px;
+    background-color: darkcyan;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+}
+table#tableCode{
+    width: 80%;
+    margin: 0 auto;
+}

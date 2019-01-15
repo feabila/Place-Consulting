@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consulting CEP (Zip Code)</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <p id="title">APIs with <span class="underline">CEP</span> and <span class="underline">ZIP Code</span></p>
+    </header>
+    <form id="formCode">
+        <input type="text" id="inputCode" data-id="zip" placeholder="Insert CEP/Zip Code here..." />
+        <button id="buttonCode" data-id="consult-zip">Consult</button>
+        <div class="clear"></div>
+    </form>
+
+    <table class="table table-striped" id="tableCode" data-id="table-zip">
+        <thead data-id="thead-zip">
+                <th scope="col">Type</th>
+                <th scope="col">Code</th>
+                <th scope="col">Address</th>
+                <th scope="col">Neighborhood</th>
+                <th scope="col">State</th>
+        </thead>
+        <tbody data-id="tbody-zip"></tbody>
+    </table>
+
+    <script src="consulting.min.js"></script>
+</body>
+</html>
